@@ -9,20 +9,18 @@
 .header-title {
     flex: 1;
     text-align: left;
-    font-size: 65px;
+    font-size: 50px; /* Decreased for mobile */
     font-weight: bold;
-    font-family: 'Bebas Neue', bold; 
-    color: antiquewhite; 
-    margin-top: 10px; /* Adjust this value to move the title down */
-    line-height:0;
-  }
-  
+    font-family: 'Bebas Neue', bold;
+    color: antiquewhite;
+    margin-top: 10px;
+    line-height: 0;
+}
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     opacity: 0.85;
     background: rgb(0, 0, 0) url("https://i.postimg.cc/XYXfZ8zC/uni.jpg") no-repeat center fixed;
-    
 }
 
 a {
@@ -53,11 +51,12 @@ h4 {
     display: flex;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap; /* Added for smaller screens */
 }
 
 .headerimg {
-    max-width: 1300px;
-    padding: 250px 100px;
+    max-width: 100%; /* Make sure the image resizes properly */
+    padding: 150px 50px; /* Reduced padding for smaller screens */
 }
 
 nav {
@@ -83,7 +82,7 @@ nav ul li {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -98,8 +97,8 @@ nav ul li {
 }
 
 .halfchild {
-    flex-basis: 50%;
-    min-width: 300px;
+    flex-basis: 48%;
+    min-width: 280px;
     margin-top: 20px;
 }
 
@@ -135,14 +134,14 @@ nav ul li {
 }
 
 .small-container {
-    max-width: 1380px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .childprods {
-    flex-basis: 25%;
+    flex-basis: 48%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
@@ -168,7 +167,7 @@ nav ul li {
 }
 
 .ohhh {
-    background: linear-gradient(rgb(67, 68, 66),rgb(82, 81, 81));
+    background: linear-gradient(rgb(67, 68, 66), rgb(82, 81, 81));
 }
 
 .more {
@@ -193,7 +192,9 @@ nav ul li {
     padding: 50px;
 }
 
-.halfchild select, .halfchild option, .halfchild input {
+.halfchild select,
+.halfchild option,
+.halfchild input {
     color: #333;
 }
 
@@ -226,7 +227,7 @@ nav ul li {
 }
 
 .fa.fa-quote-left {
-    font-size: 40px;    
+    font-size: 40px;
 }
 
 .testchild p {
@@ -267,7 +268,8 @@ nav ul li {
     padding-top: 2em;
 }
 
-.footerChild1, .footerChild2 {
+.footerChild1,
+.footerChild2 {
     min-width: 250px;
     margin-bottom: 20px;
 }
@@ -300,7 +302,8 @@ nav ul li {
     margin: 100px auto 50px;
 }
 
-select, select option  {
+select,
+select option {
     border: 1px solid black;
     color: #333;
     padding: 5px;
@@ -360,7 +363,8 @@ select, select option  {
     border: 1px solid black;
 }
 
-select, input {
+select,
+input {
     outline: none;
 }
 
@@ -387,7 +391,7 @@ select, input {
     min-height: calc(100vh - 120px);
 }
 
-.formPage .btn{
+.formPage .btn {
     display: block;
     margin: 20px 0;
     text-align: center;
@@ -419,9 +423,9 @@ select, input {
     .toggle {
         display: block;
         cursor: pointer;
-    }    
+    }
     .active {
-        background-color:grey;
+        background-color: grey;
     }
     .active .nav-item {
         display: block;
@@ -458,6 +462,7 @@ select, input {
     }
     .headerimg h1 {
         font-size: 32px;
+        align-items: center;
     }
     .child .logo img {
         margin: 20px 20px;
@@ -468,7 +473,9 @@ select, input {
     .child {
         text-align: center;
     }
-    .halfchild, .testchild, .childprods {
+    .halfchild,
+    .testchild,
+    .childprods {
         flex-basis: 100%;
     }
     .single-product .child {
