@@ -496,5 +496,18 @@ input {
         margin-top: -40px; /* Reduce the gap further */
     }
 }
+@media (max-width: 768px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url("https://i.postimg.cc/XYXfZ8zC/uni.jpg") no-repeat center center/cover;
+        z-index: -1;
+    }
+}
+
 
 
