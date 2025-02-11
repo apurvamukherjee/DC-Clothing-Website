@@ -468,6 +468,12 @@ input {
         margin: 20px 20px;
     }
 }
+@media (max-width: 768px) {
+    .hero-section {  /* Adjust this class based on your actual structure */
+        padding-top: 1px; /* Reduce top padding */
+        margin-top: -10px; /* Pull it closer to the header */
+    }
+}
 
 @media only screen and (max-width: 670px) {
     .child {
@@ -482,4 +488,13 @@ input {
         text-align: left;
     }
 }
+@media (max-width: 768px) {
+    .headerimg {
+        padding: 40px 40px; /* Reduce top padding */
+    }
+    .hero-section {  
+        margin-top: -40px; /* Reduce the gap further */
+    }
+}
+
 
