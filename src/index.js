@@ -27,7 +27,7 @@ const makeCommits = (n) => {
     return simpleGit().push();
   }
 
-  const x = random.int(0, 3); // random week offset
+  const x = random.int(51, 54); // random week offset
   const y = random.int(0, 6);  // random day offset
   const date = moment()
     .subtract(1, "y")
