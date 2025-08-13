@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "random": "^5.4.1",
+    "simple-git": "^3.28.0"
+  }
+}
